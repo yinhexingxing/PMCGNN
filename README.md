@@ -8,7 +8,7 @@ For JARVIS Dataset, we follow PotNet and use the same training, validation, and 
 ### The Materials Project Dataset
 For The Materials Project Dataset, we follow PotNet and use the same training, validation, and test set. We evaluate our PMCGNN on four important crystal property tasks, including Formation Energy, Band Gap, Bulk Moduli and Shear Moduli. The training, validation, and test set contains 60000, 5000, and 4239 crystals for tasks of formation energy and band gap. The numbers are 4664, 393, 393 for Bulk Moduli and Shear Moduli.The used metric is test MAE. The baseline results are taken form PotNet.
 ## Benchmarked results
-### JARVIS dataset
+### JARVIS Dataset
 ![cover](JARVIS.svg)
 ### The Materials Project Dataset
 ![cover](MP.svg)

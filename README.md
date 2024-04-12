@@ -10,7 +10,7 @@ For The Materials Project Dataset, we follow PotNet and use the same training, v
 
 
 ## Availability and implementation
-The code and data will then be available for download after this study is published.
+The code will then be available for download after this study is published.
 
 ## Acknowledgement
 

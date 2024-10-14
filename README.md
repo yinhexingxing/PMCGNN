@@ -1,4 +1,41 @@
 # PMCGNN
+Official code repository of paper [Improving Crystal Property Prediction from a Multiplex Graph Perspective](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01200)  
+
+
+![cover](pmcgnn.svg)
+## Python environment setup with Conda
+```
+conda create -n pmcgnn python=3.9
+conda activate pmcgnn
+
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+pip install torch-scatter==2.1.0 torch-sparse==0.6.16 torch-cluster==1.6.0 torch-spline-conv==1.2.1 -f https://data.pyg.org/whl/torch-1.13.1%2Bcu116.html
+pip install torch-geometric==2.3.1
+
+pip install numpy==1.24.3
+pip install matplotlib==3.7.1
+pip install jarvis-tools==2022.9.16
+pip install ignite==1.1.0
+pip install pandas==2.0.2
+pip install dgl==1.1.1
+pip install periodictable==1.6.1
+pip install pydantic==1.10.2
+pip install pytorch-ignite==0.4.13
+pip install opt-einsum==3.3.0
+pip install yacs==0.1.8
+pip install tensorboard==2.13.0
+```
+## Summation Algorithm
+We used the summation algorithm from [PotNet](https://github.com/divelab/AIRS/tree/main/OpenMat/PotNet).
+## Train Models
+```
+python main.py --config configs/pmcgnn.yaml
+```
+## Evaluate Models
+```
+python main.py --config configs/pmcgnn.yaml  --checkpoint xxx --testing
+```
+We provide preprocessed files and pretrained models in this [google drive](). 
 
 ## Dataset
 
@@ -17,8 +54,10 @@ For The Materials Project Dataset, we follow PotNet and use the same training, v
 ![cover](efficient.svg)
 
 ## Availability and implementation
-The code will then be available for download after this study is published.
+The code will soon be available for download.
 
 ## Acknowledgement
+This repo is built upon the previous work PotNet's [[codebase]](https://github.com/divelab/AIRS/tree/main/OpenMat/PotNet), licensed under the GPL-3.0 license.  
+This repo is partially based on GRIT's [[codebase]](https://github.com/LiamMa/GRIT/tree/main)
 
-This repo is built upon the previous work PotNet's [[codebase]](https://github.com/divelab/AIRS/tree/main/OpenMat/PotNet). Thank you very much for the excellent codebase. 
+Thank you very much for the excellent codebase. 

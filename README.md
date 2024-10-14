@@ -60,4 +60,4 @@ The code will soon be available for download.
 This repo is built upon the previous work PotNet's [[codebase]](https://github.com/divelab/AIRS/tree/main/OpenMat/PotNet), licensed under the GPL-3.0 license.  
 This repo is partially based on GRIT's [[codebase]](https://github.com/LiamMa/GRIT/tree/main)
 
-Thank you very much for the excellent codebase. 
+Thank you very much for these excellent codebases. 

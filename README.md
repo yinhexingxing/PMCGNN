@@ -35,7 +35,7 @@ python main.py --config configs/pmcgnn.yaml
 ```
 python main.py --config configs/pmcgnn.yaml  --checkpoint xxx --testing
 ```
-We provide preprocessed files and pretrained models in this [google drive](). 
+We provide preprocessed files and pretrained models in this [google drive](https://drive.google.com/drive/folders/1e9iYUlCtVdv5T3_D6XmTvs8BdAvXozRg?usp=sharing). 
 
 ## Dataset
 
@@ -53,8 +53,6 @@ For The Materials Project Dataset, we follow PotNet and use the same training, v
 ## Efficiency
 ![cover](efficient.svg)
 
-## Availability and implementation
-The code will soon be available for download.
 
 ## Acknowledgement
 This repo is built upon the previous work PotNet's [[codebase]](https://github.com/divelab/AIRS/tree/main/OpenMat/PotNet), licensed under the GPL-3.0 license.  

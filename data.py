@@ -559,7 +559,7 @@ def get_train_val_loaders(
 
     if target == "bulk modulus":
         print('using mp bulk dataset')
-        with open('output/bulk_megnet_test.pkl', 'rb') as f:
+        with open('output/bulk_megnet_train.pkl', 'rb') as f:
             dataset_train = pk.load(f)
         with open('output/bulk_megnet_val.pkl', 'rb') as f:
             dataset_val = pk.load(f)
@@ -568,7 +568,7 @@ def get_train_val_loaders(
         target = 'bulk modulus'
 
     if target == "shear modulus":
-        with open('output/shear_megnet_test.pkl', 'rb') as f:
+        with open('output/shear_megnet_train.pkl', 'rb') as f:
             dataset_train = pk.load(f)
         with open('output/shear_megnet_val.pkl', 'rb') as f:
             dataset_val = pk.load(f)
